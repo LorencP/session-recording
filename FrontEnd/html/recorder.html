@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" />
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="../css/site.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<head>
+  <title>The Idea Space</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<style>
+  #elementToShare {
+    background: rgb(233, 233, 233);
+    font-size: 2em;
+    height: 100%;
+    left: 0;
+    padding: 0 1em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+</style>
+
+<div id="elementToShare" contenteditable style="margin-top: 3px;">
+  <svg style="position: absolute; width: 0; height: auto; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-paragraph-right" viewBox="0 0 32 32">
+        <title>paragraph-right</title>
+        <path d="M0 2h32v4h-32zM12 8h20v4h-20zM12 20h20v4h-20zM0 14h32v4h-32zM0 26h32v4h-32z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+  <section id="landing">
+    <div class="layout-grid">
+      <div id="r0-c0"></div>
+      <div class="layout-grid-item logo-hero" id="r0-c1">
+        <svg class="icon icon-paragraph-right">
+          <use xlink:href="#icon-paragraph-right"></use>
+        </svg><span class="logo-text">The Idea Space</span>
+
+        <label class="hero-input-label" for="hero-idea-search">Search any idea...</label>
+        <input type="text" placeholder="" id="hero-idea-search" class="hero-input" />
+
+        <a href="me.html" class="ignore-decoration-link">
+          <div class="button-primary center-button">Search Idea</div>
+        </a>
+
+        <ul class="hero-action-ul">
+          <li>Login</li>
+          <li>Sign Up</li>
+        </ul>
+
+        <span class="arrow-down-scroll"><i class="fas fa-angle-down"></i></span>
+      </div>
+      <div id="r0-c2"></div>
+    </div>
+  </section>
+</div>
+
+<div style="position: fixed;left: 20%;right: 20%;text-align: center; top: 15px;">
+  <button id="start" contenteditable="false">Start Canvas Recording</button>
+  <button id="stop" disabled contenteditable="false">Stop</button>
+</div>
+
+<script src="https://cdn.webrtc-experiment.com/screenshot.js"></script>
+<script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+
+<script src="../Javascript/record.js"></script>

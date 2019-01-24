@@ -1,0 +1,54 @@
+@font-face {
+    font-family: textured;
+    src: url(../fonts/Bohem\Press\Shadow.ttf);
+}
+
+body {
+    box-sizing: border-box;
+    font: 32px sans-serif;
+    color: #444;
+    margin: 1em;
+    font-family: 'Poiret One',
+        cursive;
+    line-height: 18px;
+    background-color: #ccc;
+    perspective: 500px;
+}
+
+.resume-container-preload {
+    width: 700px;
+    margin-top: 500px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: 2rem;
+    transform: translateZ(-400px) rotateX(20deg) rotateY(-15deg);
+    box-shadow: 50px 80px 50px rgba(0, 0, 0, 0.2);
+    outline: 1px solid transparent;
+    height: 500px;
+    transition: transform 1s ease-in-out;
+    background-color: #fff;
+}
+
+.resume-container {
+    width: 700px;
+    margin-top: 500px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: 2rem;
+    box-shadow: 50px 80px 50px rgba(0, 0, 0, 0.2);
+    outline: 1px solid transparent;
+    height: 500px;
+    transform: translateY(-300px);
+    transition: transform 1s ease-in-out;
+    background-color: #fff;
+
+}
+
+.name-header {
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Poiret One',
+        cursive;
+}

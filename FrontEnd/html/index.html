@@ -1,0 +1,95 @@
+<html>
+<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" />
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="../css/site.css" rel="stylesheet" />
+
+<head>
+    <title>The Idea Space</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <svg style="position: absolute; width: 0; height: auto; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-paragraph-right" viewBox="0 0 32 32">
+                <title>paragraph-right</title>
+                <path d="M0 2h32v4h-32zM12 8h20v4h-20zM12 20h20v4h-20zM0 14h32v4h-32zM0 26h32v4h-32z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <section id="landing">
+        <div class="layout-grid">
+            <div id="r0-c0"></div>
+            <div class="layout-grid-item logo-hero" id="r0-c1">
+                <svg class="icon icon-paragraph-right">
+                    <use xlink:href="#icon-paragraph-right"></use>
+                </svg><span class="logo-text">The Idea Space</span>
+
+                <label class="hero-input-label" for="hero-idea-search">Search any idea...</label>
+                <input type="text" placeholder="" id="hero-idea-search" class="hero-input" />
+
+                <a href="me.html" class="ignore-decoration-link">
+                    <div class="button-primary center-button">Search Idea</div>
+                </a>
+
+                <ul class="hero-action-ul">
+                    <li>Login</li>
+                    <li>Sign Up</li>
+                </ul>
+
+                <span class="arrow-down-scroll"><i class="fas fa-angle-down"></i></span>
+            </div>
+            <div id="r0-c2"></div>
+        </div>
+    </section>
+
+    <section id="sign-up">
+        <div class="layout-grid">
+            <div id="r1-c0"></div>
+            <div class="layout-grid-item" id="r1-c1">
+                <div class="page-header">Sign Up for The Idea Space</div>
+                <div class="title-bar"></div>
+
+                <div class="input-container">
+                    <input type="text" class="text-input" id="email" placeholder="Email" />
+                    <input type="text" class="text-input" id="firstName" placeholder="First Name" />
+                    <input type="text" class="text-input" id="lastName" placeholder="Last Name" />
+                    <input type="password" class="text-input" id="password" placeholder="Password" />
+                    <input type="password" class="text-input" id="password-confirm" placeholder="Confirm Password" />
+                </div>
+
+                <div class="button-primary center-button" id="sign-up">Sign Up</div>
+            </div>
+            <div id="r1-c2"></div>
+        </div>
+    </section>
+
+    <div style="position: fixed;left: 20%;right: 20%;text-align: center;">
+        <button id="start" contenteditable="false">Start Canvas Recording</button>
+        <button id="stop" disabled contenteditable="false">Stop</button>
+    </div>
+</body>
+
+</html>
+
+<canvas width="1984" height="1001" style="top: 0px; left: 0px; z-index: -1; position: absolute;" id="canvas"></canvas>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/2.9.0/jquery.serializejson.min.js"></script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../Javascript/index.js"></script>
+<script src="utils.js"></script>
+
+<script src="https://cdn.webrtc-experiment.com/screenshot.js"></script>
+<script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+
+<script src="../Javascript/record.js"></script>
